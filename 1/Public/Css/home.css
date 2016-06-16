@@ -1,0 +1,65 @@
+.blog-post-title{
+	word-break:break-all;
+}
+.blog-post-title>a{
+	color:#555;
+	text-decoration: none;
+}
+.blog-post-title>a:hover{
+	color:#337ab7;
+}
+.blog-article-img{
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.home-title{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: left;
+}
+.home-article-content{
+	text-indent: 2em;
+	letter-spacing: 0.5px;
+	margin-top: 20px;
+	font-size: 17px;
+	line-height: 1.52;
+	color: #6d6d6d;
+	text-align: left;
+}
+.hr1{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.tips{
+	text-align: left;
+	color: #6d6d6d;
+}
+.tips>span{
+	padding-right: 5px;
+}
+.tips>span>i{
+	padding:0px 5px;
+	color: #0b7cc6;
+}
+.read-detail{
+	text-align: right;
+	padding-left: 0px!important;
+	padding-right: 0px!important;
+}
+.read-detail>span{
+	background-color: #1e73be;
+	padding:5px 0px;
+	cursor:pointer;
+}
+.read-detail>span:hover{
+	background-color: #7A7B7C;
+}
+.read-detail>span>a{
+	text-decoration: none;
+	color:#fff;
+	text-align:center;
+	height: 30px;
+    line-height: 30px;
+    padding: 0px 10px;
+}

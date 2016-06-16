@@ -1,0 +1,45 @@
+<extend name="Index2/base" />
+<block name="css">
+    <style type="text/css">
+        @media screen and (max-width: 768px){
+            .page-count {
+                display: inline;
+            }
+        }
+    </style>
+</block>
+<block name="body">
+    <div class="container middle marketing home">
+        <div class="row featurette">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 blog-main">
+                <foreach name='article' item='v'>
+                <div class="row blog-article">
+                    <div>
+                        <h2 class="blog-post-title home-title">
+                            <a href="{:U('Home/Article/article_detail',array('arid'=>$v['arid']))}">{$v.title}</a>
+                        </h2>
+                        <div class="tips">
+                            <span><i class="fa fa-user"></i>By {$v.author}</span>
+                            <span><i class="fa fa-clock-o"></i><?php echo date("y/m/d",$v['time']);?></span>
+                            <span><i class="fa fa-tag"></i>{$v.typename}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row blog-article-content featurette">
+                    {$v.path}
+                    <div class="home-article-content">
+                        <p>{$v.describe}</p>
+                        <p class="read-detail">
+                            <span><a href="{:U('Home/Article/article_detail',array('arid'=>$v['arid']))}">阅读全文</a></span>
+                        </p>
+                    </div>
+                    <hr class="hr1">
+                </div>
+                </foreach>
+                <div class="page">{$Page}</div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+</block>

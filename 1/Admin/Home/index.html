@@ -1,0 +1,129 @@
+<include file="Index/sidebar" />
+<include file="Index/header" />
+            <div class="wrapper wrapper-content">
+                <div class="row">
+                    <div class="col-lg-12 animated fadeInRight">
+                        <div class="mail-box-header">
+                            <div class="pull-right tooltip-demo">
+                                <a href="mailbox.html" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="存为草稿"><i class="fa fa-pencil"></i> 存为草稿</a>
+                                <a href="mailbox.html" class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="放弃"><i class="fa fa-times"></i> 放弃</a>
+                            </div>
+                        
+                            <h2>
+                            撰写文章
+                            </h2>
+                        </div>
+                        <div class="mail-box">
+                            <div class="mail-body">
+
+                                <form class="form-horizontal" method="get">
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">文章标题：</label>
+
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" value="{$article.title}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">描述：</label>
+
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" value="{$article.describe}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group" id="data_1">
+                                        <label class="col-sm-2 control-label">日期：</label>
+
+                                        <div class="col-sm-10 input-group date article-add-date">
+                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                            <input type="text" class="form-control" value="{$article.time}">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">作者：</label>
+
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" value="{$article.author}">
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>Wyswig Summernote 富文本编辑器</h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="form_editors.html#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li><a href="form_editors.html#">选项1</a>
+                                        </li>
+                                        <li><a href="form_editors.html#">选项2</a>
+                                        </li>
+                                    </ul>
+                                    <a class="close-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ibox-content no-padding">
+
+                                <div class="summernote">
+                                    <h2>H+ 后台主题</h2>
+                                    <p>H+是一个完全响应式，基于Bootstrap3.4.0最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术，她提供了诸多的强大的可以重新组合的UI组件，并集成了最新的jQuery版本(v2.1.1)，当然，也集成了很多功能强大，用途广泛的就jQuery插件，她可以用于所有的Web应用程序，如<b>网站管理后台</b>，<b>网站会员中心</b>，<b>CMS</b>，<b>CRM</b>，<b>OA</b>等等，当然，您也可以对她进行深度定制，以做出更强系统。</p>
+                                    <p>
+                                        <b>当前版本：</b>v1.7
+                                    </p>
+                                    <p>
+                                        <b>定价：</b><span class="label label-warning">&yen;768（不开发票）</span>
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <script>
+        $(document).ready(function () {
+
+            $('.summernote').summernote({
+                lang: 'zh-CN'
+            });
+
+        });
+        var edit = function () {
+            $("#eg").addClass("no-padding");
+            $('.click2edit').summernote({
+                lang: 'zh-CN',
+                focus: true
+            });
+        };
+        var save = function () {
+            $("#eg").removeClass("no-padding");
+            var aHTML = $('.click2edit').code(); //save HTML If you need(aHTML: array).
+            $('.click2edit').destroy();
+        };
+        
+        // 日期
+        $('#data_1 .input-group.date').datepicker({
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            calendarWeeks: true,
+            autoclose: true
+        });
+    </script>
+    <include file="Index/footer" / 

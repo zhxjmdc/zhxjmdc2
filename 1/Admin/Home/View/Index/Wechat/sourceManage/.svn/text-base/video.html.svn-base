@@ -1,0 +1,56 @@
+<include file="Index/sidebar" />
+<include file="Index/header" />
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>素材管理</h2>
+        <ol class="breadcrumb">
+            <li><a href="index.html">主页</a></li>
+            <li><strong>图文消息</strong></li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div>
+
+<div class="wrapper wrapper-content">
+    <div class="row">
+        <div class="col-lg-12 animated fadeInRight">
+            <div class="mail-box-header wechat-source">
+                <ul class="nav nav-pills">
+                    <li role="presentation"><a href="{:U('Home/WechatManage/image_text_source_page')}">图文消息</a></li>
+                    <li role="presentation"><a href="{:U('Home/WechatManage/image_source_page')}">图片</a></li>
+                    <li role="presentation"><a href="{:U('Home/WechatManage/voice_source_page')}">语音</a></li>
+                    <li role="presentation" class="active"><a href="{:U('Home/WechatManage/video_source_page')}">视频</a></li>
+                </ul>
+            </div>
+            <div class="mail-box">
+                <div class="mail-body">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12 animated fadeInRight">
+            <div class="file-box">
+                <div class="file">
+                    <a href="#">
+                        <span class="corner"></span>
+                        <div class="icon">
+                            <i class="fa fa-file"></i>
+                        </div>
+                        <div class="file-name">
+                            Document_2014.doc
+                            <br/>
+                            <small>添加时间：2014-10-13</small><br/>
+                        </div>
+                        <div class="wechat-option">
+                            <div class="wechat-edit wechat-left"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+                            |<div class="wechat-del wechat-right"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<include file="Index/footer" />

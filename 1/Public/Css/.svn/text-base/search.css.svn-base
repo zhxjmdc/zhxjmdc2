@@ -1,0 +1,4 @@
+.search-result>small>i{
+	color: #5bc0de;
+	font-size: 16px;
+}

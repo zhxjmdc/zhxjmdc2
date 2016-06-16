@@ -1,0 +1,227 @@
+[ 2016-06-01T16:06:59+08:00 ] ::1 /zhxjmdc/1/admin.php/Home/WechatManage/aa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001008s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
+SQL: SHOW COLUMNS FROM `zhx_w_auto_response` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `zhx_w_source` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `zhx_w_user` [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000526s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001253s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001851s ]
+
+[ 2016-06-01T16:07:27+08:00 ] ::1 /zhxjmdc/1/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000939s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+
+[ 2016-06-01T16:07:27+08:00 ] ::1 /zhxjmdc/1/admin.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000229s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000614s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000637s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000996s ]
+
+[ 2016-06-01T16:07:31+08:00 ] ::1 /zhxjmdc/1/admin.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+SQL: SHOW COLUMNS FROM `zhx_admin` [ RunTime:0.0015s ]
+SQL: SELECT `admin`,`pwd` FROM `zhx_admin` WHERE `admin` = 'jmdc' LIMIT 1   [ RunTime:0.0019s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Users/zhangxiang/PhpstormProjects/zhxjmdc/1/ThinkPHP/Common/functions.php 第 1272 行.
+
+[ 2016-06-01T16:07:31+08:00 ] ::1 /zhxjmdc/1/admin.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000895s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zhx_article` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `zhx_article_data` [ RunTime:0.0012s ]
+SQL: SELECT SUM(comment_count) AS tp_sum FROM `zhx_article_data` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT SUM(browse_count) AS tp_sum FROM `zhx_article_data` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000284s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000630s ]
+NOTIC: [8] Undefined variable: name /Users/zhangxiang/PhpstormProjects/zhxjmdc/1/Admin/Runtime/Cache/Home/55843b8195cd32862e5dfa640df6e51d.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086930s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001232s ]
+
+[ 2016-06-01T16:07:34+08:00 ] ::1 /zhxjmdc/1/admin.php/Home/Article/article_add_page.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0004s ]
+SQL: SELECT `aid`,`typename` FROM `zhx_articletype` WHERE ( pid =0 )  [ RunTime:0.0003s ]
+SQL: SELECT `aid`,`typename` FROM `zhx_articletype` WHERE ( pid =1 )  [ RunTime:0.0003s ]
+SQL: SELECT `aid`,`typename` FROM `zhx_articletype` WHERE ( pid =6 )  [ RunTime:0.0003s ]
+SQL: SELECT `aid`,`typename` FROM `zhx_articletype` WHERE ( pid =7 )  [ RunTime:0.0003s ]
+SQL: SELECT `aid`,`typename` FROM `zhx_articletype` WHERE ( pid =10 )  [ RunTime:0.0003s ]
+SQL: SELECT `aid`,`typename` FROM `zhx_articletype` WHERE ( pid =11 )  [ RunTime:0.0003s ]
+SQL: SELECT `aid`,`typename` FROM `zhx_articletype` WHERE ( pid =12 )  [ RunTime:0.0003s ]
+SQL: SELECT `aid`,`typename` FROM `zhx_articletype` WHERE ( pid =2 )  [ RunTime:0.0003s ]
+SQL: SELECT `aid`,`typename` FROM `zhx_articletype` WHERE ( pid =5 )  [ RunTime:0.0003s ]
+SQL: SELECT `aid`,`typename` FROM `zhx_articletype` WHERE ( pid =3 )  [ RunTime:0.0003s ]
+SQL: SELECT `aid`,`typename` FROM `zhx_articletype` WHERE ( pid =8 )  [ RunTime:0.0003s ]
+SQL: SELECT `aid`,`typename` FROM `zhx_articletype` WHERE ( pid =9 )  [ RunTime:0.0007s ]
+SQL: SELECT `aid`,`typename` FROM `zhx_articletype` WHERE ( pid =15 )  [ RunTime:0.0003s ]
+SQL: SELECT `aid`,`typename` FROM `zhx_articletype` WHERE ( pid =4 )  [ RunTime:0.0003s ]
+SQL: SELECT `aid`,`typename` FROM `zhx_articletype` WHERE ( pid =13 )  [ RunTime:0.0003s ]
+SQL: SELECT `aid`,`typename` FROM `zhx_articletype` WHERE ( pid =14 )  [ RunTime:0.0003s ]
+SQL: SELECT `aid`,`typename` FROM `zhx_articletype` WHERE ( pid =16 )  [ RunTime:0.0003s ]
+SQL: SELECT `aid`,`typename` FROM `zhx_articletype` WHERE ( pid =17 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000282s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000666s ]
+NOTIC: [8] Undefined variable: name /Users/zhangxiang/PhpstormProjects/zhxjmdc/1/Admin/Runtime/Cache/Home/c77b3b7febf87698cadd8900b4718ca3.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001022s ]
+
+[ 2016-06-01T16:07:35+08:00 ] ::1 /zhxjmdc/1/admin.php/Home/Article/article_drafts_page.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000127s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `zhx_article` WHERE `status` = 0 ORDER BY time desc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0004s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='5' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='16' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000270s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000627s ]
+NOTIC: [8] Undefined variable: name /Users/zhangxiang/PhpstormProjects/zhxjmdc/1/Admin/Runtime/Cache/Home/f326e83181fd73b4b0086cfbbcb6fa8c.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.096389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096797s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001081s ]
+
+[ 2016-06-01T16:07:40+08:00 ] ::1 /zhxjmdc/1/admin.php/Home/Article/article_list_page.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `zhx_article` WHERE `status` = 1 ORDER BY time desc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0004s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='14' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='16' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='16' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='17' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='16' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='16' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='5' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='5' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='16' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='16' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='16' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='13' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='16' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='0' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='16' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='16' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='15' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='15' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='5' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000273s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000622s ]
+NOTIC: [8] Undefined variable: name /Users/zhangxiang/PhpstormProjects/zhxjmdc/1/Admin/Runtime/Cache/Home/f3d8c67891ef50077d82a84a3865bf8f.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.151574s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.151987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000723s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001130s ]
+

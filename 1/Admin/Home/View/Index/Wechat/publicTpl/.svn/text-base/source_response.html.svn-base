@@ -1,0 +1,144 @@
+<div>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+            <a href="#text" aria-controls="home" role="tab" data-toggle="tab">
+                <i class="fa fa-pencil" aria-hidden="true"></i>文字
+            </a>
+        </li>
+        <li role="presentation">
+            <a href="#image" aria-controls="profile" role="tab" data-toggle="tab">
+                <i class="fa fa-picture-o" aria-hidden="true"></i>图片
+            </a>
+        </li>
+        <li role="presentation">
+            <a href="#voice" aria-controls="messages" role="tab" data-toggle="tab">
+                <i class="fa fa-volume-up" aria-hidden="true"></i>语音
+            </a>
+        </li>
+        <li role="presentation">
+            <a href="#video" aria-controls="settings" role="tab" data-toggle="tab">
+                <i class="fa fa-video-camera" aria-hidden="true"></i>视频
+            </a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="text">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content no-padding">
+                    <div class="summernote" id="content" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div role="tabpanel" class="tab-pane wechat-tabpanel" id="image">
+            <div class="source-tabpanel-left" data-toggle="modal" data-target="#myModal5">
+                <span>素材库中选择</span>
+            </div>
+            <div class="source-tabpanel-upload">
+                <div class="dropzone" id="dropzone"><span>本地上传</span></div>
+                <input type="hidden" id="type-img" name="img" value="">
+            </div>
+        </div>
+
+        <div role="tabpanel" class="tab-pane wechat-tabpanel" id="voice">
+            <div class="source-tabpanel-left" data-toggle="modal" data-target="#myModal5">
+                <span>素材库中选择</span>
+            </div>
+            <div class="source-tabpanel-right">
+                <a href="{:U('Home/WechatManage/create_voice_page')}">新建</a>
+            </div>
+        </div>
+
+        <div role="tabpanel" class="tab-pane wechat-tabpanel" id="video">
+            <div class="source-tabpanel-left" data-toggle="modal" data-target="#myModal5">
+                <span>素材库中选择</span>
+            </div>
+            <div class="source-tabpanel-right">
+                <a href="{:U('Home/WechatManage/create_video_page')}">新建</a>
+            </div>
+        </div>
+
+        <include file="Index/Wechat/publicTpl/modal" />
+        <!--&lt;!&ndash; Standard button &ndash;&gt;-->
+        <!--<button type="button" class="btn btn-default">（默认样式）Default</button>-->
+
+        <!--&lt;!&ndash; Provides extra visual weight and identifies the primary action in a set of buttons &ndash;&gt;-->
+        <!--<button type="button" class="btn btn-primary">（首选项）Primary</button>-->
+
+        <!--&lt;!&ndash; Indicates a successful or positive action &ndash;&gt;-->
+        <!--<button type="button" class="btn btn-success">（成功）Success</button>-->
+
+        <!--&lt;!&ndash; Contextual button for informational alert messages &ndash;&gt;-->
+        <!--<button type="button" class="btn btn-info">（一般信息）Info</button>-->
+
+        <!--&lt;!&ndash; Indicates caution should be taken with this action &ndash;&gt;-->
+        <!--<button type="button" class="btn btn-warning">（警告）Warning</button>-->
+
+        <!--&lt;!&ndash; Indicates a dangerous or potentially negative action &ndash;&gt;-->
+        <!--<button type="button" class="btn btn-danger">（危险）Danger</button>-->
+
+        <!--&lt;!&ndash; Deemphasize a button by making it look like a link while maintaining button behavior &ndash;&gt;-->
+        <!--<button type="button" class="btn btn-link">（链接）Link</button>-->
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>大小设置</h5>
+
+            </div>
+            <div class="ibox-content">
+                <p>
+                    模态窗口提供两种大小尺寸，可以通过为模态窗口的<code>.modal-dialog</code>添加类来实现
+                </p>
+
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal5">
+                        大模态窗口
+                    </button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal6">
+                        小模态窗口
+                    </button>
+                </div>
+                <div class="modal inmodal fade" id="myModal5" tabindex="-1" role="dialog"  aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                <h4 class="modal-title">窗口标题</h4>
+                                <small class="font-bold">这里可以显示副标题。
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>H+</strong> 是一个完全响应式，基于Bootstrap3.4.0最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术，她提供了诸多的强大的可以重新组合的UI组件，并集成了最新的jQuery版本(v2.1.1)，当然，也集成了很多功能强大，用途广泛的jQuery插件，她可以用于所有的Web应用程序，如网站管理后台，网站会员中心，CMS，CRM，OA等等，当然，您也可以对她进行深度定制，以做出更强系统。</p>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                                <button type="button" class="btn btn-primary">保存</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal inmodal fade" id="myModal6" tabindex="-1" role="dialog"  aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                <h4 class="modal-title">窗口标题</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>H+</strong> 是一个完全响应式，基于Bootstrap3.4.0最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术，她提供了诸多的强大的可以重新组合的UI组件，并集成了最新的jQuery版本(v2.1.1)，当然，也集成了很多功能强大，用途广泛的jQuery插件，她可以用于所有的Web应用程序，如网站管理后台，网站会员中心，CMS，CRM，OA等等，当然，您也可以对她进行深度定制，以做出更强系统。</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+                                <button type="button" class="btn btn-primary">保存</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

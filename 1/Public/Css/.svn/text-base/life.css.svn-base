@@ -1,0 +1,30 @@
+.life-bg>img{
+	margin-top: 0px!important;
+}
+.life{
+	background-color: #fff;
+}
+.life-box{
+	width:100%;
+	background-color: #1BBC9B;
+	height:180px;
+}
+.demo-box2{
+	min-height: 500px;
+	background-color: #fff;
+}
+.life-content-footer{
+	width:100%;
+	height:200px;
+}
+.featurette-heading{
+	font-family: 'Microsoft YaHei';
+	text-align: right;
+}
+.lead {
+    font-size: 14px;
+    font-family: 'Microsoft YaHei';
+    letter-spacing: 1px;
+    color: #8C8C8C;
+    text-indent: 2em;
+}

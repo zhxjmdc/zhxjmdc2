@@ -1,0 +1,1370 @@
+[ 2016-01-20T13:08:26+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.078001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:1.5630s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.3460s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0060s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.3040s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.4750s ]
+SQL: SELECT `arid`,`title` FROM `zhx_article` ORDER BY time LIMIT 6   [ RunTime:0.2500s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.3310s ]
+SQL: SELECT `typename`,`aid` FROM `zhx_articletype`  [ RunTime:0.1230s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0360s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zhx_article` WHERE `status` = 1 LIMIT 1   [ RunTime:0.2530s ]
+SQL: SELECT * FROM `zhx_article` WHERE `status` = 1 ORDER BY time desc LIMIT 0,5   [ RunTime:0.7230s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0360s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `zhx_article_data` [ RunTime:0.5130s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='75' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='87' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='76' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='77' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='23' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='78' ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\LSS\1\Application\Runtime\Cache\Home\39b332e5f8883cb2938d6d989e0f6c27.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.501086s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.502086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.086005s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.088005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.039002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.039002s ]
+
+[ 2016-01-20T13:09:00+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/guestbook
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0100s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.099006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-20T13:11:17+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/life
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0550s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.018001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019001s ]
+
+[ 2016-01-20T13:11:22+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/life
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0080s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009000s ]
+
+[ 2016-01-20T13:11:25+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/life
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0070s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2016-01-20T13:11:26+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0070s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0070s ]
+SQL: SELECT `arid`,`title` FROM `zhx_article` ORDER BY time LIMIT 6   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0070s ]
+SQL: SELECT `typename`,`aid` FROM `zhx_articletype`  [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\LSS\1\Application\Runtime\Cache\Home\bf3b4465296514de17e1f8dd92d84602.php 第 182 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012001s ]
+
+[ 2016-01-20T13:11:27+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Article/click_get_more.html?aid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 185 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zhx_article` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 186 行.
+SQL: SELECT * FROM `zhx_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0140s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zhx_article_data` [ RunTime:0.0090s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='75' ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='1' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='87' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='6' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='76' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='77' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='23' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='78' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='10' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='79' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='23' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='80' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='81' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='82' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='83' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+
+[ 2016-01-20T13:11:28+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/life
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0130s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.018001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.018001s ]
+
+[ 2016-01-20T13:11:30+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/demo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0160s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-01-20T13:11:32+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/life
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0070s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012001s ]
+
+[ 2016-01-20T13:12:01+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0156s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SELECT `arid`,`title` FROM `zhx_article` ORDER BY time LIMIT 6   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SELECT `typename`,`aid` FROM `zhx_articletype`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\LSS\1\Application\Runtime\Cache\Home\bf3b4465296514de17e1f8dd92d84602.php 第 182 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2016-01-20T13:12:01+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Article/click_get_more.html?aid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 185 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zhx_article` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 186 行.
+SQL: SELECT * FROM `zhx_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article_data` [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='75' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='87' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='76' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='77' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='23' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='78' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='10' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='79' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='23' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='80' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='81' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='82' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='83' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+
+[ 2016-01-20T13:12:04+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Article/click_get_more.html?aid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 185 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zhx_article` LIMIT 1   [ RunTime:0.0156s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 186 行.
+SQL: SELECT * FROM `zhx_article` ORDER BY time desc LIMIT 10,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='8' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article_data` [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='84' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='85' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='86' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='9' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='8' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='46' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='7' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='73' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='13' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='74' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+
+[ 2016-01-20T13:12:09+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Article/article_detail?arid=86
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0156s ]
+NOTIC: [2] Missing argument 3 for Home\Model\ArticleModel::get_article(), called in D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php on line 31 and defined D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_article` WHERE `arid` = 86 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0156s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article_data` [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='86' ) LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_comment` [ RunTime:0.1404s ]
+SQL: SELECT * FROM `zhx_comment` WHERE `arid` = 86 AND `pcid` = 0 ORDER BY time desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0156s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SELECT `arid`,`title` FROM `zhx_article` ORDER BY time LIMIT 6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SELECT `typename`,`aid` FROM `zhx_articletype`  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\LSS\1\Application\Runtime\Cache\Home\7d99a81bc0c5062f04553b059940b477.php 第 278 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-20T13:12:18+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Article/article_comment_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_comment` [ RunTime:0.0000s ]
+SQL: INSERT INTO `zhx_comment` (`name`,`email`,`content`,`arid`,`time`,`head_pic`,`pcid`) VALUES ('','','','86','1453266738','123','0') [ RunTime:0.0936s ]
+SQL: SELECT `name` FROM `zhx_comment` WHERE `cid` = 0 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-20T13:12:18+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Article/__PUBLIC__/Images/a1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-20T13:12:22+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Article/article_comment_son_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.015600s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_comment` [ RunTime:0.0000s ]
+SQL: INSERT INTO `zhx_comment` (`name`,`email`,`content`,`arid`,`pcid`,`time`,`head_pic`) VALUES ('','','','86','209','1453266742','123') [ RunTime:0.0312s ]
+SQL: SELECT `name` FROM `zhx_comment` WHERE `cid` = 209 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-20T13:12:22+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Article/__PUBLIC__/Images/a4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-20T13:13:09+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/article/aid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+SQL: SELECT `arid`,`title` FROM `zhx_article` ORDER BY time LIMIT 6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SELECT `typename`,`aid` FROM `zhx_articletype`  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\LSS\1\Application\Runtime\Cache\Home\bf3b4465296514de17e1f8dd92d84602.php 第 182 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-20T13:13:09+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-20T13:13:09+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-20T13:13:10+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Article/click_get_more.html?aid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( pid =1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( aid =1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+SQL: SELECT `content`,`title`,`arid` FROM `zhx_article` WHERE ( 1=1 AND aid='1' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( pid =6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( aid =6 )  [ RunTime:0.0000s ]
+SQL: SELECT `content`,`title`,`arid` FROM `zhx_article` WHERE ( 1=1 AND aid='6' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( pid =7 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( aid =7 )  [ RunTime:0.0000s ]
+SQL: SELECT `content`,`title`,`arid` FROM `zhx_article` WHERE ( 1=1 AND aid='7' )  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( pid =10 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( aid =10 )  [ RunTime:0.0000s ]
+SQL: SELECT `content`,`title`,`arid` FROM `zhx_article` WHERE ( 1=1 AND aid='10' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( pid =11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( aid =11 )  [ RunTime:0.0000s ]
+SQL: SELECT `content`,`title`,`arid` FROM `zhx_article` WHERE ( 1=1 AND aid='11' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( pid =12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( aid =12 )  [ RunTime:0.0000s ]
+SQL: SELECT `content`,`title`,`arid` FROM `zhx_article` WHERE ( 1=1 AND aid='12' )  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+
+[ 2016-01-20T13:13:13+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/article/aid/9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0156s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SELECT `arid`,`title` FROM `zhx_article` ORDER BY time LIMIT 6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SELECT `typename`,`aid` FROM `zhx_articletype`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\LSS\1\Application\Runtime\Cache\Home\bf3b4465296514de17e1f8dd92d84602.php 第 182 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2016-01-20T13:13:13+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Article/click_get_more.html?aid=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( pid =9 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( aid =9 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SELECT `content`,`title`,`arid` FROM `zhx_article` WHERE ( 1=1 AND aid='9' )  [ RunTime:0.0156s ]
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+
+[ 2016-01-20T13:13:16+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Article/article_detail/arid/73.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for Home\Model\ArticleModel::get_article(), called in D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php on line 31 and defined D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zhx_article` WHERE `arid` = 73 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='7' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article_data` [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='73' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_comment` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zhx_comment` WHERE `arid` = 73 AND `pcid` = 0 ORDER BY time desc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: parent D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 100 行.
+NOTIC: [8] Undefined index: parentid D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 101 行.
+SQL: SELECT * FROM `zhx_comment` WHERE ( pcid =183 ) ORDER BY time desc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: parent D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 100 行.
+NOTIC: [8] Undefined index: parentid D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 101 行.
+SQL: SELECT * FROM `zhx_comment` WHERE ( pcid =181 ) ORDER BY time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_comment` WHERE ( cid =181 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_comment` WHERE ( pcid =182 ) ORDER BY time desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SELECT `arid`,`title` FROM `zhx_article` ORDER BY time LIMIT 6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0156s ]
+SQL: SELECT `typename`,`aid` FROM `zhx_articletype`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\LSS\1\Application\Runtime\Cache\Home\7d99a81bc0c5062f04553b059940b477.php 第 278 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-20T13:13:16+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Article/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-20T13:13:16+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Article/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-20T13:13:20+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/guestbook
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0156s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-20T13:17:16+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/life
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0220s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-01-20T13:17:18+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/demo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0080s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-20T13:17:44+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0110s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0070s ]
+SQL: SELECT `arid`,`title` FROM `zhx_article` ORDER BY time LIMIT 6   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0070s ]
+SQL: SELECT `typename`,`aid` FROM `zhx_articletype`  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\LSS\1\Application\Runtime\Cache\Home\bf3b4465296514de17e1f8dd92d84602.php 第 182 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-20T13:17:45+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Article/click_get_more.html?aid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 185 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zhx_article` LIMIT 1   [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 186 行.
+SQL: SELECT * FROM `zhx_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0060s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `zhx_article_data` [ RunTime:0.0330s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='75' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='87' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='76' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='6' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='77' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='23' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='78' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='10' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='79' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='23' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='80' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='81' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='82' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='83' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+
+[ 2016-01-20T13:23:21+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Article/article_detail/arid/73.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for Home\Model\ArticleModel::get_article(), called in D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php on line 31 and defined D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zhx_article` WHERE `arid` = 73 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='7' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article_data` [ RunTime:0.0156s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='73' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_comment` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_comment` WHERE `arid` = 73 AND `pcid` = 0 ORDER BY time desc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: parent D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 100 行.
+NOTIC: [8] Undefined index: parentid D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 101 行.
+SQL: SELECT * FROM `zhx_comment` WHERE ( pcid =183 ) ORDER BY time desc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: parent D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 100 行.
+NOTIC: [8] Undefined index: parentid D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 101 行.
+SQL: SELECT * FROM `zhx_comment` WHERE ( pcid =181 ) ORDER BY time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_comment` WHERE ( cid =181 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_comment` WHERE ( pcid =182 ) ORDER BY time desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SELECT `arid`,`title` FROM `zhx_article` ORDER BY time LIMIT 6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0156s ]
+SQL: SELECT `typename`,`aid` FROM `zhx_articletype`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\LSS\1\Application\Runtime\Cache\Home\7d99a81bc0c5062f04553b059940b477.php 第 278 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-20T13:23:38+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Article/article_detail/arid/73.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for Home\Model\ArticleModel::get_article(), called in D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php on line 31 and defined D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zhx_article` WHERE `arid` = 73 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='7' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article_data` [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='73' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_comment` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zhx_comment` WHERE `arid` = 73 AND `pcid` = 0 ORDER BY time desc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: parent D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 100 行.
+NOTIC: [8] Undefined index: parentid D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 101 行.
+SQL: SELECT * FROM `zhx_comment` WHERE ( pcid =183 ) ORDER BY time desc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: parent D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 100 行.
+NOTIC: [8] Undefined index: parentid D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 101 行.
+SQL: SELECT * FROM `zhx_comment` WHERE ( pcid =181 ) ORDER BY time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_comment` WHERE ( cid =181 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_comment` WHERE ( pcid =182 ) ORDER BY time desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0156s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SELECT `arid`,`title` FROM `zhx_article` ORDER BY time LIMIT 6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0156s ]
+SQL: SELECT `typename`,`aid` FROM `zhx_articletype`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\LSS\1\Application\Runtime\Cache\Home\7d99a81bc0c5062f04553b059940b477.php 第 278 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-20T13:23:43+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Article/article_detail/arid/73.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for Home\Model\ArticleModel::get_article(), called in D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php on line 31 and defined D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 31 行.
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zhx_article` WHERE `arid` = 73 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='7' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article_data` [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='73' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_comment` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zhx_comment` WHERE `arid` = 73 AND `pcid` = 0 ORDER BY time desc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: parent D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 100 行.
+NOTIC: [8] Undefined index: parentid D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 101 行.
+SQL: SELECT * FROM `zhx_comment` WHERE ( pcid =183 ) ORDER BY time desc  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: parent D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 100 行.
+NOTIC: [8] Undefined index: parentid D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 101 行.
+SQL: SELECT * FROM `zhx_comment` WHERE ( pcid =181 ) ORDER BY time desc  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_comment` WHERE ( cid =181 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_comment` WHERE ( pcid =182 ) ORDER BY time desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0156s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SELECT `arid`,`title` FROM `zhx_article` ORDER BY time LIMIT 6   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SELECT `typename`,`aid` FROM `zhx_articletype`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\LSS\1\Application\Runtime\Cache\Home\7d99a81bc0c5062f04553b059940b477.php 第 278 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.109200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2016-01-20T13:24:12+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+SQL: SELECT `arid`,`title` FROM `zhx_article` ORDER BY time LIMIT 6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SELECT `typename`,`aid` FROM `zhx_articletype`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zhx_article` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_article` WHERE `status` = 1 ORDER BY time desc LIMIT 0,5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0156s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article_data` [ RunTime:0.0156s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='75' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='87' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='76' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='77' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='23' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='78' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015600s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015600s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\LSS\1\Application\Runtime\Cache\Home\39b332e5f8883cb2938d6d989e0f6c27.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2016-01-20T13:24:12+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/article
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+SQL: SELECT `arid`,`title` FROM `zhx_article` ORDER BY time LIMIT 6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SELECT `typename`,`aid` FROM `zhx_articletype`  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\LSS\1\Application\Runtime\Cache\Home\bf3b4465296514de17e1f8dd92d84602.php 第 182 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-20T13:24:20+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Article/click_get_more.html?aid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 185 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zhx_article` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 186 行.
+SQL: SELECT * FROM `zhx_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0156s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article_data` [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='75' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='87' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='76' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='77' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='23' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='78' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='10' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='79' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='23' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='80' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='81' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='82' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='83' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+
+[ 2016-01-20T13:24:25+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Article/click_get_more.html?aid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 185 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `zhx_article` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map D:\wamp\www\LSS\1\Application\Home\Model\ArticleModel.class.php 第 186 行.
+SQL: SELECT * FROM `zhx_article` ORDER BY time desc LIMIT 10,10   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='8' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article_data` [ RunTime:0.0156s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='84' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='85' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='86' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='9' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='8' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='46' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='7' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='73' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='13' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='74' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+
+[ 2016-01-20T13:24:34+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/article/aid/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SELECT `arid`,`title` FROM `zhx_article` ORDER BY time LIMIT 6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0156s ]
+SQL: SELECT `typename`,`aid` FROM `zhx_articletype`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\LSS\1\Application\Runtime\Cache\Home\bf3b4465296514de17e1f8dd92d84602.php 第 182 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-20T13:24:34+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Article/click_get_more.html?aid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( pid =2 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( aid =2 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+SQL: SELECT `content`,`title`,`arid` FROM `zhx_article` WHERE ( 1=1 AND aid='2' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( pid =5 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( aid =5 )  [ RunTime:0.0000s ]
+SQL: SELECT `content`,`title`,`arid` FROM `zhx_article` WHERE ( 1=1 AND aid='5' )  [ RunTime:0.0000s ]
+
+[ 2016-01-20T13:24:39+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/article/aid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+SQL: SELECT `arid`,`title` FROM `zhx_article` ORDER BY time LIMIT 6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SELECT `typename`,`aid` FROM `zhx_articletype`  [ RunTime:0.0156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\LSS\1\Application\Runtime\Cache\Home\bf3b4465296514de17e1f8dd92d84602.php 第 182 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-20T13:24:41+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Article/click_get_more.html?aid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( pid =1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( aid =1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+SQL: SELECT `content`,`title`,`arid` FROM `zhx_article` WHERE ( 1=1 AND aid='1' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( pid =6 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( aid =6 )  [ RunTime:0.0000s ]
+SQL: SELECT `content`,`title`,`arid` FROM `zhx_article` WHERE ( 1=1 AND aid='6' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( pid =7 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( aid =7 )  [ RunTime:0.0000s ]
+SQL: SELECT `content`,`title`,`arid` FROM `zhx_article` WHERE ( 1=1 AND aid='7' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( pid =10 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( aid =10 )  [ RunTime:0.0000s ]
+SQL: SELECT `content`,`title`,`arid` FROM `zhx_article` WHERE ( 1=1 AND aid='10' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( pid =11 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( aid =11 )  [ RunTime:0.0000s ]
+SQL: SELECT `content`,`title`,`arid` FROM `zhx_article` WHERE ( 1=1 AND aid='11' )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( pid =12 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( aid =12 )  [ RunTime:0.0000s ]
+SQL: SELECT `content`,`title`,`arid` FROM `zhx_article` WHERE ( 1=1 AND aid='12' )  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+NOTIC: [8] Use of undefined constant arid - assumed 'arid' D:\wamp\www\LSS\1\Application\Home\Controller\ArticleController.class.php 第 127 行.
+
+[ 2016-01-20T13:24:49+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/article/aid/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+SQL: SELECT `arid`,`title` FROM `zhx_article` ORDER BY time LIMIT 6   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SELECT `typename`,`aid` FROM `zhx_articletype`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\LSS\1\Application\Runtime\Cache\Home\bf3b4465296514de17e1f8dd92d84602.php 第 182 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2016-01-20T13:24:52+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Article/click_get_more.html?aid=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( pid =14 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_articletype` WHERE ( aid =14 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SELECT `content`,`title`,`arid` FROM `zhx_article` WHERE ( 1=1 AND aid='14' )  [ RunTime:0.0000s ]
+
+[ 2016-01-20T13:25:07+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0156s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SELECT `arid`,`title` FROM `zhx_article` ORDER BY time LIMIT 6   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0000s ]
+SQL: SELECT `typename`,`aid` FROM `zhx_articletype`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zhx_article` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `zhx_article` WHERE `status` = 1 ORDER BY time desc LIMIT 0,5   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_articletype` [ RunTime:0.0156s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='11' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_article_data` [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='75' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='1' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='87' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='76' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='6' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='77' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `typename` FROM `zhx_articletype` WHERE ( 1=1 AND aid='23' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `comment_count`,`browse_count` FROM `zhx_article_data` WHERE ( 1=1 AND arid='78' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Array to string conversion D:\wamp\www\LSS\1\Application\Runtime\Cache\Home\39b332e5f8883cb2938d6d989e0f6c27.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062400s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-20T13:25:39+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/guestbook
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2016-01-20T13:25:52+08:00 ] 127.0.0.1 /LSS/1/index.php/Home/Index/guestbook
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `zhx_column` [ RunTime:0.0156s ]
+SQL: SELECT `name`,`href` FROM `zhx_column` WHERE `type` = 1 AND `status` = 1 ORDER BY column_order  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

@@ -1,0 +1,18 @@
+<div>
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        <i class="fa fa-plus" aria-hidden="true"></i>&nbsp;添加规则
+    </button>
+    <div class="collapse" id="collapseExample">
+        <div>
+            <form id="articleForm">
+                <!--<ul>-->
+                    <!--<li>规则名:</li>-->
+                    <!--<li>关键字:</li>-->
+                    <!--<li>回复:</li>-->
+                    <!--<li>qwd</li>-->
+                <!--</ul>-->
+
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<?php if (!defined('THINK_PATH')) exit();?><html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+</head>
+<form action="<?php echo U('Home/WechatManage/add_material');?>" method="post" enctype="multipart/form-data">
+    <input type="file" name="name">
+    <button type="submit">上传</button>
+    <select name="type">
+        <option value="image">图片（image）</option>
+        <option value="voice">语音（voice）</option>
+        <option value="video">视频（video）</option>
+        <option value="thumb">缩略图（thumb）</option>
+    </select>
+</form>
+<div>
+    <ul>
+        <li>图片（image）: 2M，支持bmp/png/jpeg/jpg/gif格式</li>
+        <li>语音（voice）：2M，播放长度不超过60s，支持AMR\MP3格式</li>
+        <li>视频（video）：10MB，支持MP4格式</li>
+        <li>缩略图（thumb）：64KB，支持JPG格式</li>
+    </ul>
+</div>
+</html>

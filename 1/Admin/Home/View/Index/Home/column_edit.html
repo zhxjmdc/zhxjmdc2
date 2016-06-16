@@ -1,0 +1,87 @@
+<include file="Index/sidebar" />
+<include file="Index/header" />
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-10">
+            <h2>栏目修改</h2>
+            <ol class="breadcrumb">
+                <li><a href="index.html">主页</a></li>
+                <li><strong>栏目修改</strong></li>
+            </ol>
+        </div>
+        <div class="col-lg-2">
+        </div>
+    </div>
+
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="col-lg-12 animated fadeInRight">
+                <div class="mail-box-header">
+                    <h2>修改栏目</h2>
+                </div>
+                <div class="mail-box">
+                    <div class="mail-body">
+
+                        <form action="{:U('Home/Column/column_edit')}" class="form-horizontal" method="post">
+                            <input type="hidden" value="{$column.cid}" name="cid">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">栏目名称：</label>
+
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" value="{$column.name}" name="name" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">状态：</label>
+                                <div class="col-sm-10">
+                                    <div class="radio i-checks">
+                                        <label><input id='open' type="radio" checked value="1" name="status"> <i></i> 启用</label>
+                                        <label><input id='close' type="radio" value="0" name="status"> <i></i>禁用</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">栏目类型：</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" name="type">
+                                        <option value="0">普通common</option>
+                                        <option value="1">头部header</option>
+                                        <option value="2">脚部footer</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">模板路径：</label>
+
+                                <div class="col-sm-10">
+                                     <input type="text" class="form-control" value="{$column.href}" name="href" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">权重：</label>
+
+                                <div class="col-sm-10">
+                                     <input type="text" class="form-control" value="{$column.column_order}" name="column_order">
+                                </div>
+                            </div>
+                            <div class="form-group" style="margin-top:50px;text-align:right;">
+                                <div class="col-sm-4 col-sm-offset-2">
+                                    <button class="btn btn-primary" type="submit">保存内容</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if("{$column.status}" == 1){
+                $('#open').attr('checked','true');
+            }else{
+                $('#close').attr('checked','true');
+            }
+        });
+    </script>
+<include file="Index/footer" />

@@ -1,0 +1,99 @@
+<include file="Index/sidebar" />
+<include file="Index/header" />
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-10">
+            <h2>等待回复</h2>
+            <ol class="breadcrumb">
+                <li><a href="index.html">评论</a></li>
+                <li><strong>等待回复</strong></li>
+            </ol>
+        </div>
+        <div class="col-lg-2">
+        </div>
+    </div>
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><small>评论列表</small></h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="table_data_tables.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="table_data_tables.html#">选项1</a>
+                                </li>
+                                <li><a href="table_data_tables.html#">选项2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+
+                        <table class="table table-striped table-bordered table-hover dataTables-example column-table">
+                            <thead>
+                                <tr>
+                                    <th>文章名称</th>
+                                    <th>用户名(评论者)</th>
+                                    <th>邮箱(评论者)</th>
+                                    <th>日期</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <foreach name="comment" item="v">
+                                    <tr>
+                                        <td>{$v.title}</td>            
+                                        <td>{$v.name}</td>
+                                        <td>{$v.email}</td>
+                                        <td><?php echo date('Y年 n月 j日 H:i',$v['time'])?></td>
+                                        <td class="table-operate">
+                                            <span style="color:#f00" onclick="commentDel({$v.cid},'wait')">删除</span>
+                                            <span onclick="preview({$v.arid})">预览</span>
+                                        </td>
+                                    </tr>
+                                </foreach>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>文章名称</th>
+                                    <th>用户名(评论者)</th>
+                                    <th>邮箱(评论者)</th>
+                                    <th>日期</th>
+                                    <th>操作</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+function preview(id){
+    var url = "__ROOT__/index.php/Home/Article/article_detail?arid="+id;
+    window.open(url);
+}
+</script>
+<include file="Index/footer" />
+
+    <!-- Page-Level Scripts -->
+    <script>
+        $(document).ready(function () {
+            // 表格初始化
+            $('.dataTables-example').dataTable();
+
+            $('#order').focusout(function(){
+                if($('#order').val() == "") $('#order').val('0');
+            });
+        });
+    </script>

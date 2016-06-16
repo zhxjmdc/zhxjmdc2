@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+
+    <title>JMDC</title>
+    <link rel="icon" href="__PUBLIC__/Images/favicon.ico">
+    <link href="__PUBLIC__/Js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/Css/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Morris -->
+    <link href="__PUBLIC__/Css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="__PUBLIC__/Js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+    <!-- 表格Data Tables -->
+    <link href="__PUBLIC__/Css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+    
+    <!-- 文件上传dropzone -->
+    <link href="__PUBLIC__/Css/plugins/dropzone/basic.css" rel="stylesheet">
+    <link href="__PUBLIC__/Css/plugins/dropzone/dropzone.css" rel="stylesheet">
+
+    <!-- 文本编辑器 -->
+    <link href="__PUBLIC__/Css/plugins/summernote/summernote.css" rel="stylesheet">
+    <link href="__PUBLIC__/Css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
+
+    <link href="__PUBLIC__/Css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
+    <link href="__PUBLIC__/Css/plugins/colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet">
+    <!-- 提示框 -->
+    <link href="__PUBLIC__/Js/tips/css/plug.css" rel="stylesheet">
+
+    <link href="__PUBLIC__/Css/plugins/z-tree/zTreeStyle.css" rel="stylesheet">
+
+
+    <link href="__PUBLIC__/Css/animate.css" rel="stylesheet">
+    <link href="__PUBLIC__/Css/style.css" rel="stylesheet">
+    <link href="__PUBLIC__/Css/wechat.css" rel="stylesheet">
+    <script type="text/javascript">
+        var columnDelUrl       = "{:U('Home/Column/column_del')}";
+        var columnListUrl      = "{:U('Home/Column/column_list_page')}";
+        var columnChangeStatus = "{:U('Home/Column/column_change_status')}";
+        var columnOrderUrl     = "{:U('Home/Column/column_order')}";
+        var articleAddUrl      = "{:U('Home/Article/article_add')}";
+        var articleAddDraftsUrl= "{:U('Home/Article/article_add_drafts')}";
+        var articleListUrl     = "{:U('Home/Article/article_list_page')}";
+        var articleDelUrl      = "{:U('Home/Article/article_del')}";
+        var articleEditUrl     = "{:U('Home/Article/article_edit')}";
+        var removedTyleImg     = "{:U('Home/Article/type_img_del')}";
+        var typeDelUrl         = "{:U('Home/Article/article_type_del')}";
+        var typeListUrl        = "{:U('Home/Article/article_type_page')}";
+        var draftsDelUrl       = "{:U('Home/Article/article_del')}";
+        var draftsListUrl      = "{:U('Home/Article/article_drafts_page')}";
+        var serializeAddUrl    = "{:U('Home/Article/serialize_add')}";
+        var serializeUrl       = "{:U('Home/Article/article_serialize_page')}";
+        var serializeDelUrl    = "{:U('Home/Article/article_serialize_del')}";
+        var serializeArticleRemoveUrl = "{:U('Home/Article/article_serialize_remove')}";
+        var serializeArticleAddUrl= "{:U('Home/Article/article_serialize_add')}";
+        var commentNewUrl      = "{:U('Home/Comment/comment_new_page')}";
+        var commentDelUrl      = "{:U('Home/Comment/comment_del')}";
+        var commentWaitUrl     = "{:U('Home/Comment/comment_wait_page')}";
+        var jottingAddUrl      = "{:U('Home/Jotting/jotting_add')}";
+        var jottingListUrl     = "{:U('Home/Jotting/jotting_list_page')}";
+        var jottingAddDraftsUrl= "{:U('Home/Jotting/jotting_add_drafts')}";
+        var jottingDelUrl      = "{:U('Home/Jotting/jotting_del')}";
+        var jottingDraftsListUrl="{:U('Home/Jotting/jotting_drafts_page')}";
+        var jottingEditUrl     = "{:U('Home/Jotting/jotting_edit')}";
+        var shareAddUrl        = "{:U('Home/Share/share_add')}";
+        var shareListUrl       = "{:U('Home/Share/share_list_page')}";
+        var shareDelUrl        = "{:U('Home/Share/share_del')}";
+        var shareTypeDelUrl    = "{:U('Home/Share/share_type_del')}";
+        var shareTypeListUrl   = "{:U('Home/Share/share_type_page')}";
+        var autoResponseSaveUrl= "{:U('Home/WechatFunction/auto_response_save')}";
+        var autoResponseDelUrl = "{:U('Home/WechatFunction/auto_response_del')}";
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- sidebar -->
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+
+                        <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="__PUBLIC__/Images/profile_small.jpg" />
+                             </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold"><define name="DEFAULT_AUTHOR" value="$name" /></strong>
+                             </span> <span class="text-muted text-xs block">超级管理员 <b class="caret"></b></span> </span>
+                            </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs" id="menu">
+                                <li><a href="form_avatar.html">修改头像</a></li>
+                                <li><a href="{:U('Home/Admin/bloger_message_page')}">个人资料</a></li>
+                                <li><a href="{:U('Home/Index/login_out')}">安全退出</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            JMDC
+                        </div>
+                    </li>
+                    <li <eq name='Think.CONTROLLER_NAME' value='Column'>class="active"</eq>>
+                        <a href="index.html">
+                            <i class="fa fa-th-large"></i>
+                            <span class="nav-label">栏目</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li <eq name='Think.ACTION_NAME' value='column_list_page'>class="active"</eq>>
+                                <a href="{:U('Home/Column/column_list_page')}">栏目列表</a>
+                            </li>
+                            <li <eq name='Think.ACTION_NAME' value='column_add_page'>class="active"</eq>>
+                                <a href="{:U('Home/Column/column_add_page')}">栏目添加</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li <eq name='Think.CONTROLLER_NAME' value='Article'>class="active"</eq>>
+                        <a href="index.html">
+                            <i class="fa fa-book"></i> 
+                            <span class="nav-label">文章</span> 
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li <eq name='Think.ACTION_NAME' value='article_list_page'>class="active"</eq>>
+                                <a href="{:U('Home/Article/article_list_page')}">文章列表</a>
+                            </li>
+                            <li <eq name='Think.ACTION_NAME' value='article_add_page'>class="active"</eq>>
+                                <a href="{:U('Home/Article/article_add_page')}">文章添加</a>
+                            </li>
+                            <li <eq name='Think.ACTION_NAME' value='article_serialize_page'>class="active"</eq>>
+                                <a href="{:U('Home/Article/article_serialize_page')}">文章连载</a>
+                            </li>
+                            <li <eq name='Think.ACTION_NAME' value='article_type_page'>class="active"</eq>>
+                                <a href="{:U('Home/Article/article_type_page')}">分类管理</a>
+                            </li>
+                            <li <eq name='Think.ACTION_NAME' value='article_drafts_page'>class="active"</eq>>
+                                <a href="{:U('Home/Article/article_drafts_page')}">草稿箱</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li <eq name='Think.CONTROLLER_NAME' value='Jotting'>class="active"</eq>>
+                        <a href="index.html">
+                            <i class="fa fa-paint-brush"></i>
+                            <span class="nav-label">随笔</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li <eq name='Think.ACTION_NAME' value='jotting_list_page'>class="active"</eq>>
+                            <a href="{:U('Home/Jotting/jotting_list_page')}">随笔列表</a>
+                            </li>
+                            <li <eq name='Think.ACTION_NAME' value='jotting_add_page'>class="active"</eq>>
+                            <a href="{:U('Home/Jotting/jotting_add_page')}">随笔添加</a>
+                            </li>
+                            <li <eq name='Think.ACTION_NAME' value='jotting_drafts_page'>class="active"</eq>>
+                            <a href="{:U('Home/Jotting/jotting_drafts_page')}">草稿箱</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li <eq name='Think.CONTROLLER_NAME' value='Comment'>class="active"</eq>>
+                        <a href="index.html#">
+                            <i class="fa fa-comment"></i>
+                            <span class="nav-label">评论</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li <eq name='Think.ACTION_NAME' value='comment_new_page'>class="active"</eq>>
+                                <a href="{:U('Home/Comment/comment_new_page')}">最新评论</a>
+                            </li>
+                            <li <eq name='Think.ACTION_NAME' value='comment_wait_page'>class="active"</eq>>
+                                <a href="{:U('Home/Comment/comment_wait_page')}">等待回复</a>
+                            </li>
+                            <li <eq name='Think.ACTION_NAME' value='comment_history_page'>class="active"</eq>>
+                                <a href="{:U('Home/Comment/comment_history_page')}">历史评论</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li <eq name='Think.CONTROLLER_NAME' value='Share'>class="active"</eq>>
+                    <a href="index.html#">
+                        <i class="fa fa-share-square-o"></i>
+                        <span class="nav-label">分享</span>
+                        <span class="fa arrow"></span>
+                    </a>
+
+                    <ul class="nav nav-second-level">
+                        <li <eq name='Think.ACTION_NAME' value='share_list_page'>class="active"</eq>>
+                        <a href="{:U('Home/Share/share_list_page')}">资源列表</a>
+                        </li>
+                        <li <eq name='Think.ACTION_NAME' value='share_add_page'>class="active"</eq>>
+                        <a href="{:U('Home/Share/share_add_page')}">添加资源</a>
+                        </li>
+                        <li <eq name='Think.ACTION_NAME' value='share_type_page'>class="active"</eq>>
+                        <a href="{:U('Home/Share/share_type_page')}">资源分类</a>
+                        </li>
+                    </ul>
+                    </li>
+                    <li <eq name='Think.CONTROLLER_NAME' value='WechatFunction'>class="active"</eq>>
+                    <a href="index.html#">
+                        <i class="fa fa-share-square-o"></i>
+                        <span class="nav-label">微信功能</span>
+                        <span class="fa arrow"></span>
+                    </a>
+
+                    <ul class="nav nav-second-level">
+                        <li <eq name='Think.ACTION_NAME' value='auto_response_page'>class="active"</eq>>
+                        <a href="{:U('Home/WechatFunction/auto_response_page')}">自动回复</a>
+                        </li>
+                        <li <eq name='Think.ACTION_NAME' value='define_menu_page'>class="active"</eq>>
+                        <a href="{:U('Home/WechatFunction/define_menu_page')}">自定义菜单</a>
+                        </li>
+                        <li <eq name='Think.ACTION_NAME' value='share_type_page'>class="active"</eq>>
+                        <a href="{:U('Home/WechatFunction/share_type_page')}">资源分类</a>
+                        </li>
+                    </ul>
+                    </li>
+                    <li <eq name='Think.CONTROLLER_NAME' value='WechatManage'>class="active"</eq>>
+                    <a href="index.html#">
+                        <i class="fa fa-share-square-o"></i>
+                        <span class="nav-label">微信管理</span>
+                        <span class="fa arrow"></span>
+                    </a>
+
+                    <ul class="nav nav-second-level">
+                        <li <eq name='Think.ACTION_NAME' value='image_text_source_page'>class="active"</eq>>
+                        <a href="{:U('Home/WechatManage/image_text_source_page')}">素材管理</a>
+                        </li>
+                        <li <eq name='Think.ACTION_NAME' value='user_list_page'>class="active"</eq>>
+                        <a href="{:U('Home/WechatManage/user_list_page')}">用户管理</a>
+                        </li>
+                        <li <eq name='Think.ACTION_NAME' value='share_type_page'>class="active"</eq>>
+                        <a href="{:U('Home/WechatManage/share_type_page')}">消息管理</a>
+                        </li>
+                    </ul>
+                    </li>
+                    <li <eq name='Think.CONTROLLER_NAME' value='Wechat'>class="active"</eq>>
+                    <a href="index.html#">
+                        <i class="fa fa-share-square-o"></i>
+                        <span class="nav-label">微信统计</span>
+                        <span class="fa arrow"></span>
+                    </a>
+
+                    <ul class="nav nav-second-level">
+                        <li <eq name='Think.ACTION_NAME' value='auto_response_page'>class="active"</eq>>
+                        <a href="{:U('Home/Wechat/auto_response_page')}">自动回复</a>
+                        </li>
+                        <li <eq name='Think.ACTION_NAME' value='share_add_page'>class="active"</eq>>
+                        <a href="{:U('Home/Wechat/share_add_page')}">自定义菜单</a>
+                        </li>
+                        <li <eq name='Think.ACTION_NAME' value='share_type_page'>class="active"</eq>>
+                        <a href="{:U('Home/Wechat/share_type_page')}">资源分类</a>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="">
+                        <a href="index.html#">
+                            <i class="fa fa-cog"></i>
+                            <span class="nav-label">系统管理</span>
+                            <span class="fa arrow"></span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="{:U('Home/Index/comment_check')}">基本参数</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="page-wrapper" class="gray-bg dashbard-1">

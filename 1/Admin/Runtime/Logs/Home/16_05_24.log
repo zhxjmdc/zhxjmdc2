@@ -1,0 +1,175 @@
+[ 2016-05-24T12:08:19+08:00 ] ::1 /zhxjmdc/1/admin.php/Home/Article/article_drafts_page.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000251s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001248s ]
+
+[ 2016-05-24T12:08:20+08:00 ] ::1 /zhxjmdc/1/admin.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000250s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000680s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000901s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001270s ]
+
+[ 2016-05-24T12:08:24+08:00 ] ::1 /zhxjmdc/1/admin.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000862s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+SQL: SHOW COLUMNS FROM `zhx_admin` [ RunTime:0.0086s ]
+SQL: SELECT `admin`,`pwd` FROM `zhx_admin` WHERE `admin` = 'jmdc' LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /Users/zhangxiang/PhpstormProjects/zhxjmdc/1/ThinkPHP/Common/functions.php 第 1272 行.
+
+[ 2016-05-24T12:08:24+08:00 ] ::1 /zhxjmdc/1/admin.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `zhx_article` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zhx_article` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `zhx_article_data` [ RunTime:0.0014s ]
+SQL: SELECT SUM(comment_count) AS tp_sum FROM `zhx_article_data` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT SUM(browse_count) AS tp_sum FROM `zhx_article_data` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000444s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000994s ]
+NOTIC: [8] Undefined variable: name /Users/zhangxiang/PhpstormProjects/zhxjmdc/1/Admin/Runtime/Cache/Home/55843b8195cd32862e5dfa640df6e51d.php 第 92 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001152s ]
+
+[ 2016-05-24T12:08:28+08:00 ] ::1 /zhxjmdc/1/admin.php/Home/WechatManage/user_list_page.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000941s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001723s ]
+SQL: SHOW COLUMNS FROM `zhx_w_auto_response` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `zhx_w_source` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `zhx_w_user` [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000349s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000718s ]
+NOTIC: [8] Undefined variable: name /Users/zhangxiang/PhpstormProjects/zhxjmdc/1/Admin/Runtime/Cache/Home/9134082d8ac57137dd1e2b661c1281bb.php 第 92 行.
+NOTIC: [8] Undefined variable: v /Users/zhangxiang/PhpstormProjects/zhxjmdc/1/Admin/Runtime/Cache/Home/9134082d8ac57137dd1e2b661c1281bb.php 第 544 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001125s ]
+
+[ 2016-05-24T12:08:28+08:00 ] ::1 /zhxjmdc/1/admin.php/Home/WechatManage/get_user_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000157s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+SQL: SHOW COLUMNS FROM `zhx_w_auto_response` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `zhx_w_source` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `zhx_w_user` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `zhx_w_user` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zhx_w_user` WHERE ( subscribe = 1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `w_uid`,`remark`,`country`,`province`,`city`,`headimgurl`,`subscribe_time`,`sex`,`nickname` FROM `zhx_w_user` WHERE `subscribe` = 1 LIMIT 0,2   [ RunTime:0.0005s ]
+
+[ 2016-05-24T12:08:30+08:00 ] ::1 /zhxjmdc/1/admin.php/Home/WechatManage/get_user_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000114s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+SQL: SHOW COLUMNS FROM `zhx_w_auto_response` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `zhx_w_source` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `zhx_w_user` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `zhx_w_user` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zhx_w_user` WHERE ( subscribe = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `w_uid`,`remark`,`country`,`province`,`city`,`headimgurl`,`subscribe_time`,`sex`,`nickname` FROM `zhx_w_user` WHERE `subscribe` = 1 LIMIT 2,2   [ RunTime:0.0004s ]
+
+[ 2016-05-24T12:08:30+08:00 ] ::1 /zhxjmdc/1/admin.php/Home/WechatManage/get_user_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+SQL: SHOW COLUMNS FROM `zhx_w_auto_response` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `zhx_w_source` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `zhx_w_user` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `zhx_w_user` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zhx_w_user` WHERE ( subscribe = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `w_uid`,`remark`,`country`,`province`,`city`,`headimgurl`,`subscribe_time`,`sex`,`nickname` FROM `zhx_w_user` WHERE `subscribe` = 1 LIMIT 4,2   [ RunTime:0.0003s ]
+
+[ 2016-05-24T12:08:30+08:00 ] ::1 /zhxjmdc/1/admin.php/Home/WechatManage/get_user_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+SQL: SHOW COLUMNS FROM `zhx_w_auto_response` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `zhx_w_source` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `zhx_w_user` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `zhx_w_user` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zhx_w_user` WHERE ( subscribe = 1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `w_uid`,`remark`,`country`,`province`,`city`,`headimgurl`,`subscribe_time`,`sex`,`nickname` FROM `zhx_w_user` WHERE `subscribe` = 1 LIMIT 6,2   [ RunTime:0.0003s ]
+
+[ 2016-05-24T12:08:31+08:00 ] ::1 /zhxjmdc/1/admin.php/Home/WechatManage/get_user_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000825s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+SQL: SHOW COLUMNS FROM `zhx_w_auto_response` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `zhx_w_source` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `zhx_w_user` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `zhx_w_user` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zhx_w_user` WHERE ( subscribe = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `w_uid`,`remark`,`country`,`province`,`city`,`headimgurl`,`subscribe_time`,`sex`,`nickname` FROM `zhx_w_user` WHERE `subscribe` = 1 LIMIT 2,2   [ RunTime:0.0003s ]
+
+[ 2016-05-24T12:08:32+08:00 ] ::1 /zhxjmdc/1/admin.php/Home/WechatManage/get_user_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000809s ]
+SQL: SHOW COLUMNS FROM `zhx_w_auto_response` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `zhx_w_source` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `zhx_w_user` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `zhx_w_user` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `zhx_w_user` WHERE ( subscribe = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `w_uid`,`remark`,`country`,`province`,`city`,`headimgurl`,`subscribe_time`,`sex`,`nickname` FROM `zhx_w_user` WHERE `subscribe` = 1 LIMIT 6,2   [ RunTime:0.0003s ]
+

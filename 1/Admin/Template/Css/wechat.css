@@ -1,0 +1,73 @@
+.auto-response>ul>li>a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.auto-response .nav-pills>li.active>a{
+    background-color: #576477;
+}
+.wechat-tabpanel{
+    height:350px;
+}
+.wechat-tabpanel .source-tabpanel-left{
+    height:300px;
+    float: left;
+    width:49%;
+    border:1px dashed #969696;
+    padding-top:140px;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.wechat-tabpanel .source-tabpanel-right{
+    height:300px;
+    float: right;
+    width:49%;
+    border:1px dashed #969696;
+    padding-top:140px;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.wechat-tabpanel .source-tabpanel-upload{
+    height:300px;
+    float: right;
+    width:49%;
+    border:1px dashed #969696;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.source-tabpanel-upload .dropzone{
+    height: 100%;
+    background-color: #fff;
+    padding-top: 140px;
+}
+.wechat-right{
+    float:right;
+}
+.wechat-left{
+    float:left;
+}
+.wechat-source>ul>li>a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.wechat-source .nav-pills>li.active>a{
+    background-color: #576477;
+}
+.wechat-option{
+    padding-top: 10px;
+    height:40px;
+    text-align: center;
+    background-color: #F4F4F5;
+    color: #8E8E8E;
+    font-size: 18px;
+}
+.wechat-edit{
+    width:49%;
+    text-align: center;
+}
+.wechat-del{
+    width:49%;
+    text-align: center;
+}

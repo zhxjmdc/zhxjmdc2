@@ -1,0 +1,113 @@
+<include file="Index/sidebar" />
+<include file="Index/header" />
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-10">
+            <h2>分类目录</h2>
+            <ol class="breadcrumb">
+                <li><a href="index.html">文章</a></li>
+                <li><strong>分类目录</strong></li>
+            </ol>
+        </div>
+    </div>
+    <div class="wrapper wrapper-content  animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-12">
+                <form action="{:U('Home/Article/article_type_edit')}" class="form-horizontal" method="post" enctype="multipart/form-data">
+                <div class="ibox ">
+                    <div class="ibox-title">
+                        <h5>添加新分类</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="form-group">
+                            <label>名称</label>
+                            <input type="hidden" value="{$type.aid}" name="aid">
+                            <input type="text" placeholder="请输入分类名称" class="form-control" required name="typename" value="{$type.typename}">
+                        </div>
+                        <div class="form-group">
+                            <label>别名</label>
+                            <input type="text" placeholder="请输入别名" class="form-control" name="alias" value="{$type.alias}">
+                        </div>
+                        <div class="form-group">
+                            <label>父节点：</label>
+                            <select class="form-control" name="pid">
+                                <option value="{$type.pid}">{$type.top_name}</option>
+                                <option value="0">无</option>
+                                <foreach name='grouptype' item='v'>
+                                    <option value="{$v.aid}">{$v.typename}</option>
+                                </foreach>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>分类描述</label>
+                            <textarea class="form-control" rows="3" name="describe">{$type.describe}</textarea>
+                        </div>
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-content">
+                                <div id="dropz"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="ibox float-e-margins">
+                                    <div class="ibox-title ibox-pic">
+                                        <h5>文件上传</h5>
+                                    </div>
+                                    <div class="ibox-content">
+                                        <div class="dropzone" id="dropzone"></div>
+                                        <input type="hidden" id="type-img" name="img" value="{$type.img}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4"></div>
+                            <div class="col-lg-4">
+                                <div class="ibox float-e-margins">
+                                    <div class="ibox-title ibox-pic">
+                                        <h5>原图</h5>
+                                    </div>
+                                    <div class="ibox-content">
+                                        <img id="type-img" src="{$type.img}" onerror="this.src='__PUBLIC__/Images/default_img.jpg'">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn btn-sm btn-primary m-t-n-xs" type="submit"><strong>提交</strong>
+                            </button>
+                        </div>
+                    </div>
+                </form> 
+                </div>
+            </div>
+        </div>
+    </div>
+<include file="Index/footer" />
+<script>
+    $(document).ready(function () {
+        //图片上传
+        Dropzone.options.dropzone = {
+            url: "{:U('Home/Article/upload_img')}",
+            maxFiles: 1,
+            maxFilesize: 3,
+            addRemoveLinks: true,
+            dictRemoveLinks: "x",
+            dictCancelUpload: "x",
+            acceptedFiles: ".png,.jpeg,.jpg,.bmp",
+            init: function() {
+                this.on("success", function(file) {        
+                    $('#type-img').val(file.xhr.response);
+                });
+                this.on("removedfile", function(file) {
+                    $.ajax({
+                        url     : removedTyleImg,
+                        type    : 'post',
+                        data    : {
+                            'file'     : file.xhr.response
+                        },
+                        success : function(data){
+                        }
+                    });
+                });
+            }
+        };         
+    });      
+</script>

@@ -1,0 +1,161 @@
+<include file="Index/sidebar" />
+<include file="Index/header" />
+<form id="articleForm">
+    <div class="row">
+        <div class="col-lg-12 animated fadeInRight">
+            <div class="mail-box-header">
+                <div class="pull-right tooltip-demo">
+                    <button onclick="articleAdd()" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="top" title="发布"><i class="fa fa-pencil"></i>发布</button>
+                    <button onclick="articleAddDrafts()" class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="保存并存为草稿"><i class="fa fa-times"></i>保存并存为草稿</button>
+                </div>      
+                <h2>撰写文章</h2>
+            </div>
+
+            <div class="mail-box">
+                <div class="mail-body">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">文章标题：</label>
+                            <div class="col-sm-10">
+                                <input type="text" id="title" class="form-control" value="" required name="title">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">描述：</label>
+                            <div class="col-sm-10">
+                                <input type="text" id="describe" class="form-control" value="" name="describe">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">作者：</label>
+                            <div class="col-sm-10">
+                                <input type="text" id="author" class="form-control" value="" name="author">
+                            </div>
+                        </div>
+                        <div class="form-group" id="data_1">
+                            <label class="col-sm-2 control-label">日期：</label>
+                            <div class="col-sm-10 input-group date article-add-date">
+                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                <input type="text" id="time" class="form-control" value="" name="time">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">文章分类：</label>
+                            <div class="col-sm-10 input-group date article-add-date">
+                                <select class="form-control" id="aid" name="aid">
+                                    <option value="0">无</option>
+                                    <foreach name='grouptype' item='v'>
+                                        <option value="{$v.aid}">{$v.typename}</option>
+                                    </foreach>
+                                </select>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper wrapper-content">           
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>文件配图(950*650)</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="dropzone" id="dropzone"></div>
+                        <input type="hidden" id="type-img" name="img" value="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>内容</h5>①②③④⑤⑥⑦⑧⑨⑪⑫⑬
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="form_editors.html#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content no-padding">
+                        <div class="summernote" id="content" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<include file="Index/footer" />
+<script>
+    $(document).ready(function () {
+        // 文本编辑器
+        $('.summernote').summernote({
+            lang: 'zh-CN',
+            onImageUpload: function(files, editor, welEditable) {
+                data = new FormData();
+                data.append("file", files['0']);
+                $.ajax({
+                    url     : "{:U('Home/Article/article_upload_img')}",
+                    type    : 'post',
+                    data    : data,
+                    cache: false,  
+                    contentType: false,  
+                    processData: false,
+                    success : function(url){
+                        editor.insertImage(welEditable, url);
+                    }
+                });
+            }
+        });
+
+        //图片上传
+        Dropzone.options.dropzone = {
+            url: "{:U('Home/Article/upload_img')}",
+            maxFiles: 1,
+            maxFilesize: 3,
+            addRemoveLinks: true,
+            dictRemoveLinks: "x",
+            dictCancelUpload: "x",
+            acceptedFiles: ".png,.jpeg,.jpg,.bmp",
+            init: function() {
+                this.on("success", function(file) {        
+                    $('#type-img').val(file.xhr.response);
+                });
+                this.on("removedfile", function(file) {
+                    $.ajax({
+                        url     : removedTyleImg,
+                        type    : 'post',
+                        data    : {
+                            'file'     : file.xhr.response
+                        },
+                        success : function(data){
+                        }
+                    });
+                });
+            }
+        };
+
+        // 日期
+        $('#data_1 .input-group.date').datepicker({
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            calendarWeeks: true,
+            autoclose: true
+        });
+
+        $("#articleForm").validate({
+            debug:true
+        });
+    });
+</script>

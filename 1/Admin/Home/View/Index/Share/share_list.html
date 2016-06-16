@@ -1,0 +1,39 @@
+<include file="Index/sidebar" />
+<include file="Index/header" />
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-9">
+        <h2>联系人</h2>
+        <ol class="breadcrumb">
+            <li><a href="index.html">主页</a></li>
+            <li>页面</li>
+            <li><strong>联系人</strong></li>
+        </ol>
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <foreach name="share" item="v" >
+            <div class="col-lg-4">
+                <div class="contact-box">
+                    <div class="col-sm-4">
+                        <div class="text-center">
+                            <img alt="image" class="img-circle m-t-xs img-responsive" src="{$v.img}">
+                            <div class="m-t-xs font-bold">{$v.name}</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <h3><strong>{$v.sid}</strong><span onclick="shareDel('{$v.sid}')" style="cursor:pointer;float:right;color:#c4c4c4;"><i class="fa fa-times"></i></span></h3>
+                        <p><i class="fa fa-clock-o"></i>&nbsp;<?php echo date('Y-m-d',$v['time_stamp'])?></p>
+                        <address>
+                            被下载: <strong>{$v.time}</strong>次<br>
+                            提取码: {$v.code}<br>
+                            地址  : <a href="contacts.html">{$v.path}</a><br>
+                        </address>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </foreach>
+    </div>
+</div>
+<include file="Index/footer" />

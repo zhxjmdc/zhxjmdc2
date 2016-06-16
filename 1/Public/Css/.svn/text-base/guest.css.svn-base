@@ -1,0 +1,6 @@
+.guest-header>div{
+	padding: 0px;
+}
+.guest-header>div>div{
+	padding: 0px;
+}

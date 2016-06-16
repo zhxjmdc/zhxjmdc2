@@ -1,0 +1,9 @@
+a:focus {  outline:none;   -moz-outline:none;}
+.footer{
+	background-color: #000;
+}
+.footer>p{
+	padding-top: 10px;
+	margin-bottom: 0px;
+	text-align: center;
+}

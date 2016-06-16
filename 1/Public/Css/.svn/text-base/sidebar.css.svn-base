@@ -1,0 +1,225 @@
+/*盒子一*/
+.sidebar-box1{
+	background-color: #e84c3d;
+	/*height: 250px;*/
+	text-align: center;
+}
+.sidebar-box1 h1{
+	color:#fff;
+	padding-top: 20px;
+}
+.sidebar-blog{
+	margin-top: 20px;
+	padding-bottom:20px;
+}
+.sidebar-blog>a{
+	padding: 3px;
+}
+/*盒子二*/
+.sidebar-box2{
+	background-color: #FFF;
+	height: 80px;
+	/*filter:progid:DXImageTransform.Microsoft.Shadow(color=#D2D2D2,direction=120,strength=4);/*兼容ie*/
+	-moz-box-shadow: 1px 1px 6px #D2D2D2;/*兼容firefox*/
+	-webkit-box-shadow: 1px 1px 6px #D2D2D2;/*兼容safari或chrome*/
+	box-shadow:1px 1px 6px #D2D2D2;/*兼容opera或ie9*/
+	background-color: #fff;
+}
+.sidebar-box2>h3{
+	margin-left: 10px;
+	padding-top: 10px;
+	color:#fff;
+}
+.sidebar-box2>h3>i{
+	font-size: 35px;
+	margin-right: 5px;
+	color:#00D4F5;
+}
+.sidebar-box2 .input-group{
+	padding:0px 10px;
+}
+.sidebar-box2 .form-control{
+	background-color: #fff;
+    border: 2px solid #f4f4f4;
+    color:#fff;
+    letter-spacing:1px;
+    font-size: 15px;
+}
+.sidebar-box2 .form-control:focus{
+	outline: 0px !important;
+	box-shadow: none;
+	-moz-box-shadow: none;
+}
+.sidebar-box2 .btn-default{
+	color: #cdccd1;
+	background-color: #fff;
+	border-color: #f4f4f4;
+}
+.sidebar-box2 .btn-default:hover {
+	color: #464646;
+	background-color: #f4f4f4;
+	border-color: #f4f4f4;
+}
+/*盒子三*/
+.sidebar-box3{
+	background-color: #FFF;
+	height: 250px;
+	/*filter:progid:DXImageTransform.Microsoft.Shadow(color=#D2D2D2,direction=120,strength=4);/*兼容ie*/
+	-moz-box-shadow: 1px 1px 6px #D2D2D2;/*兼容firefox*/
+	-webkit-box-shadow: 1px 1px 6px #D2D2D2;/*兼容safari或chrome*/
+	box-shadow:1px 1px 6px #D2D2D2;/*兼容opera或ie9*/
+	background-color: #fff;
+}
+.sidebar-box3>h3{
+	margin-left: 10px;
+	padding-top: 10px;
+	color:#394a54;
+}
+.sidebar-box3>h3>i{
+	font-size: 27px;
+	color: #fff;
+	background-color: #394a54;
+	padding: 3px 4px;
+	border-radius:3px;
+	margin-right: 10px;
+}
+.sidebar-box3-list{
+	margin-left: 15px;
+	margin-top: 15px;
+}
+.sidebar-box3-list>li{
+	margin-bottom: 5px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.sidebar-box3-list>li>a{
+	color:#555;
+	text-decoration: none;
+}
+.sidebar-box3-list>li>a:hover{
+	color:#1FD9B1;
+}
+/*盒子四*/
+.sidebar-box4{
+	background-color: #6B6B6B;
+	border-radius: 8px;
+	/*filter:progid:DXImageTransform.Microsoft.Shadow(color=#D2D2D2,direction=120,strength=4);/*兼容ie*/
+	-moz-box-shadow: 1px 1px 6px #D2D2D2;/*兼容firefox*/
+	-webkit-box-shadow: 1px 1px 6px #D2D2D2;/*兼容safari或chrome*/
+	box-shadow:1px 1px 6px #D2D2D2;/*兼容opera或ie9*/
+	background-color: #fff;
+}
+.badge{
+	color:#fff;
+	margin-right: 10px;
+	background-color: #494947;
+}
+.badge2{
+	background-color: #DA2727;
+}
+.badge3{
+	background-color: #A69B15;
+}
+.badge4{
+	background-color: #FFA800;
+}
+.badge5{
+	background-color: #1DA7CD;
+}
+.badge6{
+	background-color: #84817D;
+}
+.sidebar-box4>h3{
+	margin-left: 10px;
+	padding-top: 10px;
+	color:#394a54;
+}
+.sidebar-box4>h3>i{
+	font-size: 27px;
+	color: #fff;
+	background-color: #394a54;
+	padding: 3px 4px;
+	border-radius:3px;
+	margin-right: 10px;
+}
+.sidebar-box4-list{
+	margin-left: 15px;
+	margin-top: 15px;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+.sidebar-box4-list>li>a{
+	text-decoration: none;
+	margin:0px 2px 5px 2px;
+	border: 1px solid #E1DADA;
+	background-color: #f3f3f3;
+	color: #545251;
+	padding: 6px;
+	display:block;
+}
+.sidebar-box4-list>li>a:hover{
+	background-color: #737373;
+	color: #FFFFFF;
+}
+.sidebar-box4-list>li{
+	float:left;
+}
+.tags1{
+	background-color: #337ab7;
+    border-color: #2e6da4;
+    color:#fff;
+}
+.tags2{
+	background-color: #5bc0de;
+	border-color: #46b8da;
+	color:#fff;
+}
+.tags3{
+	background-color: #f0ad4e;
+	border-color: #eea236;
+	color:#fff;
+}
+.tags4{
+	background-color: #5cb85c;
+	border-color: #4cae4c;
+	color:#fff;
+}
+.tags5{
+	background-color: #d9534f;
+	border-color: #d43f3a;
+	color:#fff;
+}
+/*盒子五*/
+.sidebar-box5{
+	background-color: #6B6B6B;
+	height:500px;
+	/*filter:progid:DXImageTransform.Microsoft.Shadow(color=#D2D2D2,direction=120,strength=4);/*兼容ie*/
+	-moz-box-shadow: 1px 1px 6px #D2D2D2;/*兼容firefox*/
+	-webkit-box-shadow: 1px 1px 6px #D2D2D2;/*兼容safari或chrome*/
+	box-shadow:1px 1px 6px #D2D2D2;/*兼容opera或ie9*/
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+.sidebar-box5>h3{
+	margin-left: 10px;
+	padding-top: 10px;
+	color:#394a54;
+}
+.sidebar-box5>h3>i{
+	font-size: 27px;
+	color: #fff;
+	background-color: #394a54;
+	padding: 3px 4px;
+	border-radius:3px;
+	margin-right: 10px;
+}
+.sidebar-box5-list>li{
+	text-align: center;
+}
+.sidebar-box5-list img{
+	width:40%;
+	height:80px;
+	padding-left: 5px;
+	padding-right: 5px;
+}

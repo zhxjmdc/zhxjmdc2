@@ -1,0 +1,254 @@
+<extend name="Index2/base" />
+<block name="css">
+<style type="text/css">
+  .emotion{width:42px; height:20px; background:url("__PUBLIC__/Images/icon.gif") no-repeat 2px 2px; padding-left:20px; cursor:pointer}
+  .emotion:hover{background-position:2px -28px}
+  /*提示文字样式*/
+  form.cmxform label.error, label.error {
+    color: red;
+  }
+</style>
+</block>
+<block name="body">
+    <!-- 回到顶部 -->
+    <div id="scrollTop" >
+        <div class="level-2"></div>
+        <div class="level-3"></div>
+    </div>
+
+    <div class="container middle">
+
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 blog-main article-main">
+
+          <div class="blog-post article">
+            <h5 class="crumbs"><span>当前位置：首页》文章</span></h5>
+            <div class="article-title"><h2 class="blog-post-title">{$article.title}</h2></div>
+            <div class="article-tips"><p class="blog-post-meta">
+              <?php echo date("m-j-Y",$article['time'])?> by {$article.author}</p></div>
+            <div class="article-content">
+              <p>{$article.content}</p>
+            </div>
+            <!--<div class="article-meta">-->
+              <!--<p class="blog-post-meta">-->
+                <!--转载请注明出处：<br/>-->
+                <!--<span>救命稻草-&nbsp;Another blog post</span></p>-->
+            <!--</div>-->
+          </div><!-- /.blog-post -->
+<!-- 评论弹窗 -->
+          <div class="article-comment-btn">
+            <a role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+             <i class="fa fa-plus"></i><span>评论</span>
+            </a>
+          </div>
+          <div class="collapse" id="collapseExample">
+            <div class="well article">
+              <div class="article-title">
+                <h4 class="blog-post-title">Comment</h4>
+              </div>
+              <!-- <div class="article-tips"><p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p></div> -->
+
+              <div class="article-content form-horizontal">
+                <form class="cmxform" id="commentForm" method="post" action="">
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label article-comment-lable">Username</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="username" class="form-control" id="username" placeholder="用户名..." required>
+                      <input type="hidden" value="{$article.arid}" id="arid">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label article-comment-lable">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" name="email" class="form-control" id="email" placeholder="邮箱(不公开)..." required>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label article-comment-lable">Content</label>
+                    <div class="col-sm-10">
+                      <textarea class="form-control" name="content" id="content" rows="3" style="resize:none;" placeholder="说点什么吧..." required></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-2 control-label article-comment-lable"></label>
+                    <div class="col-sm-10 article-comment-send">
+                      <span class="emotion"></span>
+                      <button type="submit" class="sub_btn btn btn-info">Send</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+<!-- 回复弹窗 -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">            
+          <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="exampleModalLabel">Response</h4>
+            </div>
+            <form class="cmxform" id="commentForm-two" method="post" action="">
+            <div class="modal-body">
+                <div class="form-group">
+                  <label class="control-label">Username:</label>
+                  <input type="text" class="form-control" name="sname" id="sname" placeholder="用户名...">
+                  <input type="hidden" id='pcid'>
+                </div>
+                <div class="form-group">
+                  <label class="control-label">Email:</label>
+                  <input type="text" class="form-control" name="semail" id="semail" placeholder="邮箱(不公开)...">
+                </div>
+                <div class="form-group">
+                  <label class="control-label">Content:</label>
+                  <textarea class="form-control" name="scontent" id="scontent" placeholder="说点什么吧..." style="resize:none;"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+            </form>
+          </div>
+          </div>
+          </div>
+
+<!-- 评论 -->
+           <div class="blog-post article" id="article-comment">
+            <volist name="comment" id="v">
+            <div class="row article-comment">
+              <div class="col-sm-1"><img class="article-comment-img" src="{$v.head_pic}"></div>
+              <div class="col-sm-11">
+                <div class="article-comment-name">
+                  <strong>{$v.name}</strong>
+                  <span class="comment-response" onclick="response('{$v.cid}')" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" data-backdrop="false">
+                    <i class="fa fa-commenting-o">&nbsp;回复</i>
+                  </span>
+                </div>
+                <div class="article-comment-time">
+                  <?php echo date("Y年 n月 j日 H:i",$v['time'])?>
+                </div>
+                <div class="article-comment-content">
+                  <p>{$v.content}</p>
+                </div>
+              </div>
+            </div>
+            <hr id="son{$v.cid}" class="article-comment-hr">
+            
+<!-- ******************子****************************************************************** -->
+            <volist name="v['son']" id="s">
+            <div id="son{$s.cid}">
+              <div class="row article-comment-son">
+                <div class="col-sm-1"><img class="article-comment-img" src="{$s.head_pic}"></div>
+                <div class="col-sm-11">
+                  <div class="article-comment-name">
+                    <strong>{$s.name}</strong>
+                    <span class="comment-response" onclick="response('{$s.cid}')" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+                      <i class="fa fa-commenting-o">&nbsp;回复</i>
+                    </span>
+                  </div>
+                  <div class="article-comment-time">
+                    <?php echo date("Y年 n月 j日 H:i",$s['time'])?>
+                  </div>
+                  <div class="article-comment-content">
+                  <p><strong>@{$s.parent}</strong>{$s.content}</p>
+                </div>
+                </div>
+              </div>
+              <hr class="article-comment-hr-son">
+            </div>
+            </volist>
+            </volist>
+<!-- ******************子************************************************************************* -->
+          </div>
+
+          <!--<div class="comment-load-more"><a>加载更多...</a></div>-->
+
+        </div><!-- /.blog-main -->
+        <div class="col-sm-2"></div>
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</block>
+<block name="script">
+<script type="text/javascript">
+  $(function(){
+    $('.emotion').qqFace({
+      id : 'facebox',
+      assign:'content',
+      path:'__PUBLIC__/Js/plugins/qqFace/arclist/'	//表情存放的路径
+    });
+  });
+  //查看结果
+  function replace_em(str){
+    str = str.replace(/\</g,'&lt;');
+    str = str.replace(/\>/g,'&gt;');
+    str = str.replace(/\n/g,'<br/>');
+    str = str.replace(/\[em_([0-9]*)\]/g,'<img src="__PUBLIC__/Js/plugins/qqFace/arclist/$1.gif" border="0" />');
+    return str;
+  }
+
+  function response(pcid){
+      $('#pcid').val(pcid);
+  }
+
+  $().ready(function() {
+    $("#commentForm").validate({
+      rules: {
+        email : {
+          required: true,
+          email   : true
+        },
+        username : {
+          required: true,
+        },
+        content :{
+          required: true,
+        }
+      },
+      messages: {
+        username : "请输入您的用户名",
+        email    : "请输入正确的邮箱",
+        content  : "内容不能为空"
+      },
+      submitHandler: function(form) {
+        var url     = "{:U('Home/Article/article_comment_add')}";
+        var content = replace_em($('#content').val());
+        debugger
+        articleComment(url,content);
+      }
+    });
+
+    $("#commentForm-two").validate({
+      rules: {
+        semail : {
+          required: true,
+          email   : true
+        },
+        sname : {
+          required: true,
+        },
+        scontent :{
+          required: true,
+        }
+      },
+      messages: {
+        sname : "请输入您的用户名",
+        semail    : "请输入正确的邮箱",
+        scontent  : "内容不能为空"
+      },
+      submitHandler: function(form) {
+        var url = "{:U('Home/Article/article_comment_son_add')}";
+        articleResponse(url);
+        $('#exampleModal').modal('hide');
+      }
+    });
+  });
+</script>
+</block>

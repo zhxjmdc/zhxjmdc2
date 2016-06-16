@@ -1,0 +1,6 @@
+[ 2016-03-26T22:55:46+08:00 ] ::1 /zhxjmdc/1/index.php/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000081s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+ERR: 无法加载模块:Favicon
+

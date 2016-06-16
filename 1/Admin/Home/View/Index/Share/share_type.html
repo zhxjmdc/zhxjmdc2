@@ -1,0 +1,138 @@
+<include file="Index/sidebar" />
+<include file="Index/header" />
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>资源分类</h2>
+        <ol class="breadcrumb">
+            <li><a href="index.html">分享</a></li>
+            <li><strong>资源分类</strong></li>
+        </ol>
+    </div>
+</div>
+<div class="wrapper wrapper-content  animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <form action="{:U('Home/Share/share_type_add')}" class="form-horizontal" method="post" enctype="multipart/form-data">
+                <div class="ibox ">
+                    <div class="ibox-title">
+                        <h5>添加新分类</h5>
+                    </div>
+                    <div class="ibox-content type-ibox-content">
+                        <div class="form-group">
+                            <label>名称</label>
+                            <input type="text" placeholder="请输入分类名称" class="form-control" required name="name">
+                        </div>
+                        <div class="form-group">
+                            <label>分类描述</label>
+                            <textarea class="form-control" rows="3" name="describe"></textarea>
+                        </div>
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-content">
+                                <div id="dropz"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="ibox float-e-margins">
+                                    <div class="ibox-title">
+                                        <h5>文件上传</h5>
+                                    </div>
+                                    <div class="ibox-content">
+                                        <div class="dropzone" id="dropzone"></div>
+                                        <input type="hidden" id="type-img" name="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn btn-sm btn-primary m-t-n-xs" type="submit"><strong>提交</strong>
+                            </button>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>当前分类</h5>
+            </div>
+            <div class="ibox-content">
+
+                <table class="table table-striped table-bordered table-hover dataTables-example">
+                    <thead>
+                    <tr>
+                        <th>图片</th>
+                        <th>名称</th>
+                        <th>图像描述</th>
+                        <th>文章数量</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <foreach name='type' item='v'>
+                        <tr>
+                            <td class="type-img"><img src="{$v.img}" onerror="this.src='__PUBLIC__/Images/default_img.jpg'"></td>
+                            <td>
+                                <div class="btn-group">
+                                    <button type="button" class="btn">{$v.name}</button>
+                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="caret"></span>
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="{:U('Home/Share/type_edit_page',array('id'=>$v['id']))}">编辑</a></li>
+                                        <li><a onclick="shareTypeDel('{$v.id}')" style="color:#f00;">删除</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>{$v.describe}</td>
+                            <td class="center">{$v.article_count}</td>
+                        </tr>
+                    </foreach>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <th>图片</th>
+                        <th>名称</th>
+                        <th>图像描述</th>
+                        <th>文章数量</th>
+                    </tr>
+                    </tfoot>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<include file="Index/footer" />
+<script>
+    //图片上传
+    Dropzone.options.dropzone = {
+        url: "{:U('Home/Article/upload_img')}",
+        maxFiles: 1,
+        maxFilesize: 3,
+        addRemoveLinks: true,
+        dictRemoveLinks: "x",
+        dictCancelUpload: "x",
+        acceptedFiles: ".png,.jpeg,.jpg,.bmp",
+        init: function() {
+            this.on("success", function(file) {
+                $('#type-img').val(file.xhr.response);
+            });
+            this.on("removedfile", function(file) {
+                $.ajax({
+                    url     : removedTyleImg,
+                    type    : 'post',
+                    data    : {
+                        'file'     : file.xhr.response
+                    },
+                    success : function(data){
+                    }
+                });
+            });
+        }
+    };
+</script>

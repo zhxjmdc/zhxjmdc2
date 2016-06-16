@@ -1,0 +1,138 @@
+<include file="Index/sidebar"/>
+<include file="Index/header" />
+<div class="row wrapper border-bottom white-bg page-heading">
+	<div class="col-lg-10">
+		<h2>主页</h2>
+		<ol class="breadcrumb">
+			<li><a href="index.html">救命稻草</a></li>
+			<li><strong>主页</strong></li>
+		</ol>
+	</div>
+
+	<div class="col-lg-2">
+	</div>
+</div>
+
+<div class="wrapper wrapper-content">
+	<div class="row animated fadeInRight">
+		<div class="col-md-4">
+			<div class="ibox float-e-margins">
+				<div class="ibox-title"><h5>个人资料</h5></div>
+				<div>
+					<div class="ibox-content no-padding border-left-right">
+						<img alt="image" class="img-responsive" src="__PUBLIC__/Images/profile_big.jpg">
+					</div>
+					<div class="ibox-content profile-content">
+						<h4><strong>救命稻草</strong></h4>
+						<p><i class="fa fa-map-marker"></i> 浙江省杭州市西湖区</p>
+						<h5>关于我</h5>
+						<p>
+							会web前端Div、Css、Js和后台服务端Php等,热爱生活,喜欢学习新的技术,励志成为一名全栈工程师
+						</p>
+						<div class="user-button">
+							<div class="row">
+								<div class="col-md-12">
+									<hr class="hr1">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-8">
+			<div class="ibox float-e-margins">
+				<div class="ibox-title">
+					<h5>最新动态</h5>
+					<div class="ibox-tools">
+						<a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="profile.html#"><i class="fa fa-wrench"></i></a>
+						<a class="close-link"><i class="fa fa-times"></i></a>
+					</div>
+				</div>
+				<div class="ibox-content">
+					<div class="row m-t-lg">
+						<div class="col-md-4">
+							<span class="bar">5,3,9,6,5,9,7,3,5,2</span>
+							<h5><strong>{$article_count}</strong> 文章</h5>
+						</div>
+						<div class="col-md-4">
+							<span class="line">5,3,9,6,5,9,7,3,5,2</span>
+							<h5><strong>{$comment_count}</strong> 评论</h5>
+						</div>
+						<div class="col-md-4">
+							<span class="bar">5,3,2,-1,-3,-2,2,3,5,2</span>
+							<h5><strong>{$browse_count}</strong> 浏览</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ibox float-e-margins">
+				<div class="ibox-title">
+					<h5>个人资料</h5>
+					<div class="ibox-tools">
+						<a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="profile.html#"><i class="fa fa-wrench"></i></a>
+						<ul class="dropdown-menu dropdown-user">
+							<li><a class="enable-button">编辑</a></li>
+							<li><a class="disable-button">保存</a></li>
+						</ul>
+						<a class="close-link"><i class="fa fa-times"></i></a>
+					</div>
+				</div>
+				<div class="ibox-content">
+					<div class="mail-body form-horizontal" id="bloger-message">
+						<div class="form-group">
+							<label class="col-sm-2 control-label">姓名：</label>
+							<div class="col-sm-10">
+								<input disabled type="text" class="form-control" value="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">年龄：</label>
+							<div class="col-sm-10">
+								<input disabled type="text" class="form-control" value="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">姓名：</label>
+							<div class="col-sm-10">
+								<input disabled type="text" class="form-control" value="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">年龄：</label>
+							<div class="col-sm-10">
+								<input disabled type="text" class="form-control" value="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">姓名：</label>
+							<div class="col-sm-10">
+								<input disabled type="text" class="form-control" value="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">年龄：</label>
+							<div class="col-sm-10">
+								<input disabled type="text" class="form-control" value="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<include file="Index/footer" />
+<script type="text/javascript">
+	// 个人信息保存
+	$(".disable-button").click(function () {
+		$("#bloger-message input").attr("disabled",true);
+	});
+	// 个人信息修改
+	$(".enable-button").click(function () {
+		$("#bloger-message input").attr("disabled",false);;
+	});
+</script>

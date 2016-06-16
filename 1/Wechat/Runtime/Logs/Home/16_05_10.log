@@ -1,0 +1,9 @@
+[ 2016-05-10T23:15:06+08:00 ] ::1 /zhxjmdc/1/wechat.php/Home/User/aa
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000985s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001294s ]
+ERR: 无法加载数据库驱动: Think\Db\Driver\
+

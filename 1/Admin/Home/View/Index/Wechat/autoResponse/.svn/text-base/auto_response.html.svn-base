@@ -1,0 +1,98 @@
+<include file="Index/sidebar" />
+<include file="Index/header" />
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>自动回复</h2>
+        <ol class="breadcrumb">
+            <li><a href="index.html">主页</a></li>
+            <li><strong>自动回复</strong></li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div>
+
+<div class="wrapper wrapper-content">
+    <div class="row">
+            <div class="mail-box-header auto-response">
+                <ul class="nav nav-pills">
+                    <li role="presentation" class="{$auto}"><a href="{:U('Home/WechatFunction/auto_response_page')}">被添加自动回复</a></li>
+                    <li role="presentation" class="{$text}"><a href="{:U('Home/WechatFunction/text_response_page')}">消息自动回复</a></li>
+                    <li role="presentation" class="{$keyword}"><a href="{:U('Home/WechatFunction/keyword_response_page')}">关键词自动回复</a></li>
+                </ul>
+            </div>
+            <div class="mail-box">
+                <div class="mail-body">
+                    <if condition="$tpl eq 'source_response'"><include file="Index/Wechat/publicTpl/source_response" />
+                        <else /><include file="Index/Wechat/autoResponse/keyword_response" />
+                    </if>
+                    <button type="button" class="btn btn-primary" onclick="autoResponseSave()">保存</button>
+                    <button type="button" class="btn btn-danger" onclick="autoResponseDel()">删除</button>
+                </div>
+            </div>
+    </div>
+</div>
+<include file="Index/footer" />
+<script>
+    $(document).ready(function () {
+        // 文本编辑器
+        $('.summernote').summernote({
+            lang: 'zh-CN',
+            onImageUpload: function(files, editor, welEditable) {
+                data = new FormData();
+                data.append("file", files['0']);
+                $.ajax({
+                    url     : "{:U('Home/Article/article_upload_img')}",
+                    type    : 'post',
+                    data    : data,
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    success : function(url){
+                        editor.insertImage(welEditable, url);
+                    }
+                });
+            }
+        });
+
+        //图片上传
+        Dropzone.options.dropzone = {
+            url: "{:U('Home/WechatCommon/source_upload_image')}",
+            maxFiles: 1,
+            maxFilesize: 2,
+            addRemoveLinks: true,
+            dictRemoveLinks: "x",
+            dictCancelUpload: "x",
+            acceptedFiles: ".png,.jpeg,.jpg,.bmp,.gif",
+            init: function() {
+                this.on("success", function(file) {
+                    $('#type-img').val(file.xhr.response);
+                });
+                this.on("removedfile", function(file) {
+                    $.ajax({
+                        url     : removedTyleImg,
+                        type    : 'post',
+                        data    : {
+                            'file'     : file.xhr.response
+                        },
+                        success : function(data){
+                        }
+                    });
+                });
+            }
+        };
+
+        // 日期
+        $('#data_1 .input-group.date').datepicker({
+            todayBtn: "linked",
+            keyboardNavigation: false,
+            forceParse: false,
+            calendarWeeks: true,
+            autoclose: true
+        });
+
+        $("#articleForm").validate({
+            debug:true
+        });
+    });
+</script>
